@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+      <div class="card">
+        <h1>Check your BMI</h1>
+        <p>Enter your height and weight below to check your BMI result</p>
+        <div>
+          <p>Put your height in here bro (cm)</p>
+          <input
+            type="number"
+            maxlength="3"
+            name=""
+            id="tinggi"
+            placeholder="Your height.. (cm)"
+            required
+          />
+        </div>
+        <div>
+          <p>Put your weight in here bro (kg)</p>
+          <input
+            type="number"
+            maxlength="3"
+            name=""
+            id="berat"
+            placeholder="Your weight.. (kg)"
+          />
+        </div>
+        <div class="btn">
+          <button onclick="hitung()">Hitung</button>
+          <button onclick="reset()">Reset</button>
+        </div>
+        <div>
+          <p><span id="hasil"></span><span id="tebel"></span> <span id="hasil2"></span><span id="penjelasan"></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
